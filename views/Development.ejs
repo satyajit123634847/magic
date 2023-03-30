@@ -1,0 +1,348 @@
+<%- include('header.ejs') %>
+    <style>
+        .mainParagraph {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 50px;
+            /* or 125% */
+
+
+            letter-spacing: -2px;
+
+            font-family: 'Poppins', sans-serif;
+            color: #2E2E2E;
+
+        }
+
+        .customParagraph {
+            color: #000000;
+            font-weight: 500 !important;
+
+        }
+
+        section.content {
+            padding: 40px 0px;
+            position: relative;
+        }
+
+        section.content::after {
+            position: absolute;
+            background: #EF817D;
+            height: 8px;
+            width: 55%;
+            margin: auto;
+            content: '';
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        /*-------images------ */
+        .images {
+            padding: 80px 0px;
+            position: relative;
+        }
+
+        .images::after {
+            position: absolute;
+            background: #EF817D;
+            height: 8px;
+            width: 55%;
+            margin: auto;
+            content: '';
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+        }
+
+        .mainH {
+            font-size: 32px;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+            color: #1E1E1E;
+            text-align: center;
+        }
+
+        .images .subHeading {
+            font-size: 24px;
+            font-weight: 800;
+            color: #000000;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .customDiv {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .imageM {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imageM img {
+            width: 100%;
+            padding: 40px;
+        }
+
+        @media screen and (max-width:767px) {
+            .customDiv {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            .customDiv .col-md-6 {
+                text-align: center;
+            }
+
+            .images {
+                padding: 40px 0px;
+            }
+
+            section.content {
+                padding: 40px 0px;
+            }
+
+            .mainH {
+                font-size: 24px;
+            }
+
+            .images .subHeading {
+                font-size: 18px;
+            }
+
+            .mainParagraph {
+                /* font-size: 14px; */
+            }
+        }
+
+        @media screen and (max-width:576px) {
+            .images {
+                padding: 20px 0px;
+            }
+
+            section.content {
+                padding: 20px 0px;
+            }
+        }
+
+
+        .customContainer {
+            /* height: 500px; */
+            width: 100%;
+            /* height: 405px; */
+            background-color: #dff1f7;
+            background-position: center;
+            padding-bottom: 80px;
+        }
+    </style>
+    <div class="container-fluid customContainer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <p class="mainParagraph customParagraph mt-5">
+                        Elevate Your Online Presence
+                        with Our Expert Website
+                        Development Services
+                    </p>
+                    <p class="subHeading">
+                        A well-designed website is important for any company trying to prosper online in the modern
+                        digital age. You can grow your revenue, build your brand, and draw in and keep clients with the
+                        aid of a successful website. Nonetheless, building a website can be challenging, particularly if
+                        you are not familiar with the technical parts of web creation.
+                    </p>
+
+                    <div class="form-row d-flex mt-5">
+                        <div class="form-group col-sm-8 ">
+                            <input type="hidden" id="type_value" value="Development Services">
+                            <input type="email" class="form-control contact_form" id="email3" autocomplete="off"
+                                name="email" placeholder="Email" required>
+                        </div>
+                        <!-- button  -->
+                        <div class="form-group col-sm-4 offset-1">
+                            <button id="send_proposal"  class="btn btn-primary contact_form_button1">Send Proposal  </button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-6">
+                    <!-- <img src="https://magicads360.com/web/img/seo.png" alt=""> -->
+                    <img src="img/webbooo 1.png" alt="" width="585" height="390">
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="CustomServices">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="newCustomHeading" style="display:flex; justify-content:center;">
+
+                        <h3 class="mainH"> Web Development</h3>
+                    </div>
+
+                </div>
+            </div>
+
+            <section class="content">
+                <!-- <div class="mainOuter"> -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text_of_seo">
+                                That's where our company comes in. We offer the best website development service to help
+                                you create a professional and user-friendly website that meets your specific
+                                needs.&nbsp;<br />
+                                <br />
+                                At MagicAds 360, we believe that every business deserves a website that is tailored to
+                                its unique requirements. That's why we offer customized website development services
+                                that are designed to meet your specific needs. Whether you are a small business owner
+                                looking to establish your online presence, or a large corporation seeking to revamp your
+                                website, we have the expertise and experience to help you achieve your goals.
+
+                            </p>
+                            <!-- <p class="mainParagraph text-center">
+                            Whether you're looking to improve your website's ranking on search engine results pages, increase your online presence, or drive more qualified traffic to your website, we have the expertise and tools to help you succeed. If you're not ranking, you're not banking. Let us help you take your business to the top of the search engine results and with our SEO services. 
+                        </p> -->
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </section>
+            <section class="images">
+                <div class="container">
+                    <div class="row">
+                        <div class="mainHeading col-md-12">
+                            <!-- <p class="mainH">
+                                Web Development
+                            </p> -->
+                        </div>
+
+
+
+                        <div class="customDiv">
+                            <div class="col-md-6">
+                                <p class="subHeading">
+                                    Expert Web Development Team
+                                </p>
+                                <p class="">
+                                    Our website development team is composed of experts in the field who have years of
+                                    experience in creating custom websites for businesses of all sizes. We use the
+                                    latest tools and technologies to ensure that your website is up-to-date with the
+                                    latest trends and industry standards. Our team is skilled in various web development
+                                    languages and platforms, including HTML, CSS, JavaScript, PHP, and WordPress. With
+                                    our expertise, we can help you create a website that not only looks great but also
+                                    functions flawlessly.
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="imageM">
+                                    <img src="img/Group2.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="customDiv">
+                            <div class="col-md-6">
+                                <div class="imageM">
+                                    <img src="img/Frame.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="subHeading">
+                                    Customized Solutions for Your
+                                    Unique Needs
+                                </p>
+                                <p class="">
+                                    We understand that every business has its unique needs and requirements when it
+                                    comes to website development. That's why we offer customized solutions that are
+                                    tailored to meet your specific needs. Whether you need a simple brochure website or
+                                    a complex e-commerce platform, we can help you create a website that is designed to
+                                    meet your specific requirements. We work closely with our clients to ensure that
+                                    their vision is reflected in the final product.
+                                </p>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="customDiv">
+                            <div class="col-md-6">
+                                <p class="subHeading">
+                                    User-Friendly Design and Functionality
+                                </p>
+                                <p class="">
+                                    At our company, we believe that a website should not only look great but also be
+                                    user-friendly and functional. That's why we place great emphasis on the design and
+                                    functionality of the websites we create. We ensure that your website is easy to
+                                    navigate, loads quickly, and is optimized for search engines. We also ensure that
+                                    your website is responsive, meaning that it can be accessed on various devices,
+                                    including desktops, laptops, tablets, and smartphones.
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="imageM">
+                                    <img src="img/image 3.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </section>
+            <section class="content" style="border:none;">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text_of_seo">Having a well-designed website is essential for any business looking
+                                to succeed in the digital age. At our company, we offer the best website development
+                                service to help you create a professional and user-friendly website that meets your
+                                specific needs. With our expert team, customized solutions, and user-friendly design and
+                                functionality, we can help you elevate your online presence and take your business to
+                                the next level.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <div class="custom__socialIcons">
+                <ul class=" socialIcons ">
+                    <div class="custom__socialIcons">
+                        <ul class=" socialIcons ">
+                            <li><a href="https://www.linkedin.com/company/magicads360/"><i
+                                        class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="https://www.facebook.com/Magicads360"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://www.youtube.com/@magicads360"><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                            <li><a href="https://www.instagram.com/magic.ads.360/"><i
+                                        class="fa-brands fa-square-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <%- include('footer.ejs') %>

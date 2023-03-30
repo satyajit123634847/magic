@@ -1,0 +1,340 @@
+<%- include('header.ejs') %>
+    <style>
+        .mainParagraph {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 50px;
+            /* or 125% */
+           
+
+            letter-spacing: -2px;
+
+            font-family: 'Poppins', sans-serif;
+            color: #2E2E2E;
+
+        }
+
+        .customParagraph {
+            color: #000000;
+            font-weight: 500 !important;
+
+        }
+
+        section.content {
+            padding: 40px 0px;
+            position: relative;
+        }
+
+        section.content::after {
+            position: absolute;
+            background: #EF817D;
+            height: 8px;
+            width: 55%;
+            margin: auto;
+            content: '';
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        /*-------images------ */
+        .images {
+            padding: 80px 0px;
+            position: relative;
+        }
+
+        .images::after {
+            position: absolute;
+            background: #EF817D;
+            height: 8px;
+            width: 55%;
+            margin: auto;
+            content: '';
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+        }
+
+        .mainH {
+            font-size: 32px;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+            color: #1E1E1E;
+            text-align: center;
+        }
+
+        .images .subHeading {
+            font-size: 24px;
+            font-weight: 800;
+            color: #000000;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .customDiv {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .imageM {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imageM img {
+            width: 100%;
+            padding: 40px;
+        }
+
+        @media screen and (max-width:767px) {
+            .customDiv {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            .customDiv .col-md-6 {
+                text-align: center;
+            }
+
+            .images {
+                padding: 40px 0px;
+            }
+
+            section.content {
+                padding: 40px 0px;
+            }
+
+            .mainH {
+                font-size: 24px;
+            }
+
+            .images .subHeading {
+                font-size: 18px;
+            }
+
+            .mainParagraph {
+                /* font-size: 14px; */
+            }
+        }
+
+        @media screen and (max-width:576px) {
+            .images {
+                padding: 20px 0px;
+            }
+
+            section.content {
+                padding: 20px 0px;
+            }
+        }
+
+
+        .customContainer {
+            width: 100%;
+            background-color: #dff1f7;
+            background-position: center;
+            padding-bottom: 80px;
+        }
+    </style>
+    <div class="container-fluid customContainer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <p class="mainParagraph customParagraph mt-5">
+                        Let us help you navigate the complex world of SEO and ensure that your website gets the
+                        attention it deserves
+                    </p>
+                    <p class="subHeading">
+                        Welcome to Magic Ads 360, where we offer comprehensive and customized search engine optimization
+                        (SEO) services to help your business stand out from the competition. With our proven SEO
+                        strategies, we can help you increase your website&#039;s visibility and drive more traffic,
+                        leads, and sales.
+                    </p>
+
+                    <div class="form-row d-flex mt-5">
+                        <div class="form-group col-sm-8 ">
+                            <input type="hidden" id="type_value" value="SEO Services">
+                            <input type="email" class="form-control contact_form" id="email3" autocomplete="off"
+                                name="email" placeholder="Email" required>
+                        </div>
+                        <!-- button  -->
+                        <div class="form-group col-sm-4 offset-1">
+                            <button id="send_proposal"  class="btn btn-primary contact_form_button1">Send Proposal  </button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-6">
+                    <!-- <img src="https://magicads360.com/web/img/seo.png" alt=""> -->
+                    <img src="img/SEO 1.png" alt="" width="585" height="390">
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="CustomServices">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="newCustomHeading" style="display:flex; justify-content:center;">
+
+                        <h3 class="mainH">SEO services</h3>
+                    </div>
+
+                </div>
+            </div>
+
+            <section class="content">
+                <!-- <div class="mainOuter"> -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text_of_seo">
+                            Our team of SEO experts has years of experience in the industry and is well-versed in the
+                                latest SEO best practices. We work closely with our clients to understand their unique
+                                needs and goals, and we tailor our services accordingly.&nbsp;<br />
+                                <br />
+                                Whether you&#39;re looking to improve your website&#39;s ranking on search engine
+                                results pages, increase your online presence, or drive more qualified traffic to your
+                                website, we have the expertise and tools to help you succeed. If you&#39;re not ranking,
+                                you&#39;re not banking. Let us help you take your business to the top of the search
+                                engine results and with our SEO services.
+                            
+                            </p>
+                            <!-- <p class="mainParagraph text-center">
+                            Whether you're looking to improve your website's ranking on search engine results pages, increase your online presence, or drive more qualified traffic to your website, we have the expertise and tools to help you succeed. If you're not ranking, you're not banking. Let us help you take your business to the top of the search engine results and with our SEO services. 
+                        </p> -->
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </section>
+            <section class="images">
+                <div class="container">
+                    <div class="row">
+                        <div class="mainHeading col-md-12">
+                            <p class="mainH">
+                                Our Organic Services include
+                            </p>
+                        </div>
+
+
+
+                        <div class="customDiv">
+                            <div class="col-md-6">
+                                <p class="subHeading">
+                                    Keyword Research
+                                </p>
+                                <p class="mainParagraph customParagraph">
+                                <p>We conduct in-depth keyword research to identify the most relevant and
+                                    high-performing keywords for your business. This helps ensure that your website is
+                                    optimized for the right keywords that your target audience is searching for.</p>
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="imageM">
+                                    <img src="img/Group.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="customDiv">
+                            <div class="col-md-6">
+                                <div class="imageM">
+                                    <img src="img/Group (1).png" alt="img">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="subHeading">
+                                    On-page Optimization
+                                </p>
+                                <p class="mainParagraph customParagraph">
+                                <p>Our team of experts will optimize your website&#39;s structure, content, and meta
+                                    tags to ensure that it is search engine friendly and provides a great user
+                                    experience.</p>
+                                </p>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="customDiv">
+                            <div class="col-md-6">
+                                <p class="subHeading">
+                                    Keyword Research
+                                </p>
+                                <p class="mainParagraph customParagraph">
+                                <p>We use a variety of off-page optimization strategies, such as link building and
+                                    social media marketing, to improve your website&#39;s visibility and authority in
+                                    the eyes of search engines.</p>
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="imageM">
+                                    <img src="img/Layer 1.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </section>
+            <section class="content" style="border:none;">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text_of_seo">At Magic Ads 360, we believe in transparency and collaboration. That&#39;s why we provide
+                                regular reports and updates to our clients so they can see the progress of their SEO
+                                campaign. We also offer ongoing support and consultation to ensure that your website
+                                stays optimized and competitive in the ever-evolving world of SEO.<br />
+                                <br />
+                                At Magic Ads 360 we believe that SEO is not just about getting more traffic to your
+                                website, but also about delivering a great user experience<br />
+                                <br />
+                                Investing in SEO is one of the best decisions you can make for your business. With the
+                                right SEO strategy, you can improve your online visibility, drive more traffic, and
+                                increase your bottom line. Contact us today to learn more about our SEO services and how
+                                we can help you achieve your online goals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <div class="custom__socialIcons">
+                <ul class=" socialIcons ">
+                    <div class="custom__socialIcons">
+                        <ul class=" socialIcons ">
+                            <li><a href="https://www.linkedin.com/company/magicads360/"><i
+                                        class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="https://www.facebook.com/Magicads360"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://www.youtube.com/@magicads360"><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                            <li><a href="https://www.instagram.com/magic.ads.360/"><i
+                                        class="fa-brands fa-square-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <%- include('footer.ejs') %>

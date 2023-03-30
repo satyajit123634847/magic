@@ -1,0 +1,342 @@
+<%- include('header.ejs') %>
+    <style>
+        .mainParagraph {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 50px;
+            /* or 125% */
+
+
+            letter-spacing: -2px;
+
+            font-family: 'Poppins', sans-serif;
+            color: #2E2E2E;
+
+        }
+
+        .customParagraph {
+            color: #000000;
+            font-weight: 500 !important;
+
+        }
+
+        section.content {
+            padding: 40px 0px;
+            position: relative;
+        }
+
+        section.content::after {
+            position: absolute;
+            background: #EF817D;
+            height: 8px;
+            width: 55%;
+            margin: auto;
+            content: '';
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        /*-------images------ */
+        .images {
+            padding: 80px 0px;
+            position: relative;
+        }
+
+        .images::after {
+            position: absolute;
+            background: #EF817D;
+            height: 8px;
+            width: 55%;
+            margin: auto;
+            content: '';
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+        }
+
+        .mainH {
+            font-size: 32px;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+            color: #1E1E1E;
+            text-align: center;
+        }
+
+        .images .subHeading {
+            font-size: 24px;
+            font-weight: 800;
+            color: #000000;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .customDiv {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .imageM {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imageM img {
+            width: 100%;
+            padding: 40px;
+        }
+
+        @media screen and (max-width:767px) {
+            .customDiv {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            .customDiv .col-md-6 {
+                text-align: center;
+            }
+
+            .images {
+                padding: 40px 0px;
+            }
+
+            section.content {
+                padding: 40px 0px;
+            }
+
+            .mainH {
+                font-size: 24px;
+            }
+
+            .images .subHeading {
+                font-size: 18px;
+            }
+
+            .mainParagraph {
+                /* font-size: 14px; */
+            }
+        }
+
+        @media screen and (max-width:576px) {
+            .images {
+                padding: 20px 0px;
+            }
+
+            section.content {
+                padding: 20px 0px;
+            }
+        }
+
+
+        .customContainer {
+            /* height: 500px; */
+            width: 100%;
+            /* height: 405px; */
+            background-color: #dff1f7;
+            background-position: center;
+            padding-bottom: 80px;
+        }
+    </style>
+    <div class="container-fluid customContainer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <p class="mainParagraph customParagraph mt-5">
+                        Stand Out in Style:
+                        Transform Your Brand
+                        with Our Exceptional
+                        Graphic Designing
+                        Services.
+                    </p>
+                    <p class="subHeading">
+                        Having a strong and enduring brand is crucial in the cutthroat business environment of today.
+                        Excellent graphic design is one of the most important components of a successful brand.
+                    </p>
+
+                    <div class="form-row d-flex mt-5">
+                        <div class="form-group col-sm-8 ">
+                            <input type="hidden" id="type_value" value="Interactive Design">
+                            <input type="email" class="form-control contact_form" id="email3" autocomplete="off"
+                                name="email" placeholder="Email" required>
+                        </div>
+                        <!-- button  -->
+                        <div class="form-group col-sm-4 offset-1">
+                            <button id="send_proposal"  class="btn btn-primary contact_form_button1">Send Proposal  </button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-6">
+                    <!-- <img src="https://magicads360.com/web/img/seo.png" alt=""> -->
+                    <img src="img/graphicssssss 1.png" alt="" width="585" height="390">
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="CustomServices">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="newCustomHeading" style="display:flex; justify-content:center;">
+
+                        <h3 class="mainH">Interactive Design</h3>
+                    </div>
+
+                </div>
+            </div>
+
+            <section class="content">
+                <!-- <div class="mainOuter"> -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text_of_seo">
+                                At MagicAds 360, we are dedicated to provide the greatest graphic design services to
+                                assist you in developing a strong and distinctive brand.&nbsp;<br />
+                                <br />
+                                With years of experience and a team of expert designers, we have established ourselves
+                                as a leading graphic  company in the industry. Here are some reasons why we are the best
+                                choice for your graphic designing needs:
+
+                            </p>
+                            <!-- <p class="mainParagraph text-center">
+                            Whether you're looking to improve your website's ranking on search engine results pages, increase your online presence, or drive more qualified traffic to your website, we have the expertise and tools to help you succeed. If you're not ranking, you're not banking. Let us help you take your business to the top of the search engine results and with our SEO services. 
+                        </p> -->
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </section>
+            <section class="images">
+                <div class="container">
+                    <div class="row">
+                        <div class="mainHeading col-md-12">
+                            <p class="mainH">
+                                Our Organic Services include
+                            </p>
+                        </div>
+
+
+
+                        <div class="customDiv">
+                            <div class="col-md-6">
+                                <p class="subHeading">
+                                    Expert Graphic Designers
+                                </p>
+                                <p class="mainParagraph customParagraph">
+                                <p>Our team of graphic designers are experts in their field, with years of experience
+                                    creating stunning designs for businesses of all sizes. They are skilled in using the
+                                    latest design tools and technologies to create high-quality visuals that accurately
+                                    represent your brand. Whether you need a new logo, marketing materials, or a
+                                    complete rebranding, our designers can help you create a cohesive and visually
+                                    appealing brand identity.</p>
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="imageM">
+                                    <img src="img/Frame (1).png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="customDiv">
+                            <div class="col-md-6">
+                                <div class="imageM">
+                                    <img src="img/Group12.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="subHeading">
+                                    Customized Design Solutions
+                                </p>
+                                <p class="mainParagraph customParagraph">
+                                <p>We understand that every business has unique needs when it comes to graphic design.
+                                    That's why we offer customized design solutions tailored to your specific
+                                    requirements. We work closely with our clients to understand their brand identity
+                                    and vision, and then create designs that accurately reflect their values and goals.
+                                    Whether you need a simple design or a complex project, we can deliver exceptional
+                                    results that meet your expectations.</p>
+                                </p>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="customDiv">
+                            <div class="col-md-6">
+                                <p class="subHeading">
+                                    Turnaround Time
+                                </p>
+                                <p class="mainParagraph customParagraph">
+                                <p>We understand that time is of the essence in business. That's why we work efficiently
+                                    to deliver high-quality designs in a timely manner. Our streamlined design process
+                                    ensures that we can deliver your project on time, without compromising on quality.
+                                    We work closely with our clients to ensure that their design needs are met within
+                                    their timelines, so they can focus on running their business.</p>
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="imageM">
+                                    <img src="img/OBJECTS12.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </section>
+            <section class="content" style="border:none;">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text_of_seo">Having a strong and visually appealing brand is essential for
+                                businesses to stand out in today's competitive market. At MagicAds 360, we are committed
+                                to providing the best graphic designing services to help you create a powerful and
+                                memorable brand identity. With our expert designers, customized solutions, and fast
+                                turnaround time, we can help you elevate your brand and achieve your business goals.
+                                Contact us today to learn more about our graphic designing services.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <div class="custom__socialIcons">
+                <ul class=" socialIcons ">
+                    <div class="custom__socialIcons">
+                        <ul class=" socialIcons ">
+                            <li><a href="https://www.linkedin.com/company/magicads360/"><i
+                                        class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="https://www.facebook.com/Magicads360"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://www.youtube.com/@magicads360"><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                            <li><a href="https://www.instagram.com/magic.ads.360/"><i
+                                        class="fa-brands fa-square-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <%- include('footer.ejs') %>

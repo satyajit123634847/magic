@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+    <link rel="icon" type="image/x-icon" href="img/title_icon.png">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/res.css">
+
+    <title><%= title %>
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" />
+
+</head>
+
+<body id="body">
+    <header class="customHeader">
+        <nav class="navbar navbar-expand-lg navbar-light customNavigation">
+            <div class="container-fluid">
+                <!-- <a class="navbar-brand logoImage" href="https://magicads360.com"><img src="https://magicads360.com/web/img/logo.png"></a> -->
+                <a class="navbar-brand logoImage" href="/"><img src="img/logo_new.png"></a>
+                <a class="navbar-brand mobileLogo" href="/"><img src="img/mobileLogo.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNav">
+                    <ul class="navbar-nav customNavigation__list">
+
+                        <li class="nav-item dropdown dropdown-hover position-static">
+                            <a class="nav-link dropdown-toggle" href="/services" id="navbarDropdown" role="button"
+                                data-mdb-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+
+                            <!-- Dropdown menu -->
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown"
+                                style="border-top-left-radius: 0; border-top-right-radius: 0;">
+                                <div class="blank"></div>
+                                <div class="container-fluid" style="background: #eefafff2;">
+                                    <div class="row w-100 m-0">
+                                        <div class="col-md-6 col-lg-2 mb-3 mb-lg-0">
+                                            <div class="list-group list-group-flush">
+                                                <h3 class="dropdownMenu__heading">Organic Services</h3>
+                                                <ul class="dropdownMenu__links">
+                                                    <a href="/seo-services">
+                                                        <li class="list-group-item list-group-item-action">SEO services
+                                                        </li>
+                                                    </a>
+                                                    <!-- <a href="/seo-services">
+                                                        <li class="list-group-item list-group-item-action">Enterprises
+                                                            SEO services</li>
+                                                    </a>
+                                                    <a href="/seo-services">
+                                                        <li class="list-group-item list-group-item-action">Local Seo
+                                                            services</li>
+                                                    </a> -->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-2 mb-3 mb-lg-0">
+                                            <div class="list-group list-group-flush">
+                                                <h3 class="dropdownMenu__heading">Social Media Services</h3>
+                                                <ul class="dropdownMenu__links">
+                                                    <a href="/social-media">
+                                                        <li class="list-group-item list-group-item-action">Social media
+                                                            advertising</li>
+                                                    </a>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-2 mb-3 mb-lg-0">
+                                            <div class="list-group list-group-flush">
+                                                <h3 class="dropdownMenu__heading">Digital Advertising</h3>
+                                                <ul class="dropdownMenu__links">
+                                                    <a href="/digital-services">
+                                                        <li class="list-group-item list-group-item-action">Digital
+                                                            advertising</li>
+                                                    </a>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-2 mb-3 mb-lg-0">
+                                            <div class="list-group list-group-flush">
+                                                <h3 class="dropdownMenu__heading">Development</h3>
+                                                <ul class="dropdownMenu__links">
+                                                    <a href="/development-services">
+                                                        <li class="list-group-item list-group-item-action">Web
+                                                            development
+                                                        </li>
+                                                    </a>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-2 mb-3 mb-lg-0">
+                                            <div class="list-group list-group-flush">
+                                                <h3 class="dropdownMenu__heading">Interactive Design</h3>
+                                                <ul class="dropdownMenu__links">
+                                                    <a href="/interactive-services">
+                                                        <li class="list-group-item list-group-item-action">Interactive
+                                                        </li>
+                                                    </a>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-2 mb-3 mb-lg-0">
+                                            <div class="list-group list-group-flush">
+                                                <h3 class="dropdownMenu__heading">Content Marketing</h3>
+                                                <ul class="dropdownMenu__links">
+                                                    <a href="/content-services">
+                                                        <li class="list-group-item list-group-item-action">Content Marketing
+                                                        </li>
+                                                    </a>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="dropdownMenu__footer my-5">Whatever you are looking for, We’ve got
+                                        you!<span><img src="img/like.png"></span></p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!--<li class="nav-item">
+                        <a class="nav-link" href="https://magicads360.com/news">News</a>
+                    </li>-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blogs-news">Blog & News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">about us</a>
+                        </li>
+                        <li class="nav-item contactUs__btn">
+                            <a class="nav-link" href="/contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>

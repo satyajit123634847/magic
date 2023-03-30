@@ -1,0 +1,178 @@
+<%- include('header.ejs') %>
+
+
+    <div class="container mt-5" id="myBox">
+        <div class="row contactText">
+            <div class="col-6">
+                <h1 class="mt-4">Contact Us </h1>
+            </div>
+            <div class="col-6 mt-4">
+                <div class="colors">
+
+                </div>
+            </div>
+            <div class="col-12">
+                <p>any question or remarks? Just write us a message!</p>
+            </div>
+        </div>
+        <h2 class="mt-5">Contact Information</h2>
+        <br>
+        <div class="row customContact">
+            <div class="col-5 contact_info information">
+                <span class="mails_phn">
+                    <img src="img/call.png" class="img-fluid mail_call" alt="">&nbsp;&nbsp;
+                    <p class="text-white cont_mail"> +91 9166647418</p>
+                    <img src="img/mail.png" class="img-fluid mail_call" alt="">
+                    <p class="text-white cont_mail">info@magicads360.com</p>
+                </span>
+                <div class="bg-white line"></div>
+                <div class="custom__socialIcons">
+                    <ul class=" socialIcons " id="socialContact">
+                        <div class="custom__socialIcons">
+                            <ul class=" socialIcons ">
+                                <li><a href="https://www.linkedin.com/company/magicads360/"><i
+                                            class="fa-brands fa-linkedin"></i></a></li>
+                                <li><a href="https://www.facebook.com/Magicads360"><i
+                                            class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="https://www.youtube.com/@magicads360"><i
+                                            class="fa-brands fa-youtube"></i></a></li>
+                                <li><a href="https://www.instagram.com/magic.ads.360/"><i
+                                            class="fa-brands fa-square-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-5 border border-dark offset-1 information">
+                <div>
+                    <img src="img/location.png" class="img-fluid mail_call" alt="">
+                    <p class="cont_mail-1">169 Northwest Street,Jaipur <br>
+                        Rajasthan, 123123, India
+                    </p>
+                </div>
+                <div class="bg-dark line"></div>
+                <div class="mt-3">
+                    <img src="img/location.png" class="img-fluid mail_call" alt="">
+                    <p class="cont_mail-1">420 Southeast Street Raipur, Chhattisgarh, 234234, India
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row formRow mt-5">
+            <h2>Contact Form</h2>
+            <div class="col-6 emptyContact">
+
+            </div>
+            <div class="col-6">
+
+
+                <form id="contact_form">
+                    <input type="hidden" name="_token" value="Fj5Av8PizNFi2pRj4hCxPBZhfYfmFxwgATXYoZW0">
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <!-- Name -->
+                            <input type="name" class="form-control contact_form" id="name2" autocomplete="off"
+                                name="name" placeholder="Name" required>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="form-group">
+                        <!-- company name  -->
+                        <input type="text" class="form-control contact_form" id="company_name2" autocomplete="off"
+                            name="company_name" placeholder="Company Name (Optional)">
+                    </div>
+                    <br>
+
+                    <div class="form-group">
+                        <!-- phone Number  -->
+                        <input type="text" class="form-control contact_form" id="mobile" autocomplete="off"
+                            name="phone" placeholder="Phone Number *" required>
+                    </div>
+                    <br>
+                    <!-- email  -->
+                    <div class="form-row d-flex">
+                        <div class="form-group col-sm-8 ">
+                            <input type="email" class="form-control contact_form" id="email2" autocomplete="off"
+                                name="email" placeholder="Email" required>
+                        </div>
+                        <!-- button  -->
+                        <div class="form-group col-sm-4 offset-1">
+                            <button type="submit" id="lets_talk_btn1" class="btn btn-primary contact_form_button">Lets talk </button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-outline mb-5">
+                        <textarea class="form-control contact_form" name="message" id="message2"
+                            placeholder="Message(Optional)" rows="4"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <%- include('footer.ejs') %>
+
+    <script>
+         $('#lets_talk_btn1').click((e) => {
+            e.preventDefault();
+
+            if ($("#name2").val() == "") {
+                toastr.options.positionClass = 'toast-bottom-right';
+                toastr.error("Please enter name...!", '', { timeOut: 3000 })
+
+            }if ($("#mobile").val() == "") {
+                toastr.options.positionClass = 'toast-bottom-right';
+                toastr.error("Please enter mobile number...!", '', { timeOut: 3000 })
+
+            }if ($("#email2").val() == "") {
+                toastr.options.positionClass = 'toast-bottom-right';
+                toastr.error("Please enter email...!", '', { timeOut: 3000 })
+
+            }
+             else {
+                var obj = new Object()
+                obj.email = $("#email2").val()
+                obj.name = $("#name2").val()
+                obj.phone = $("#mobile").val()
+                obj.message = $("#message2").val()
+                obj.company_name = $("#company_name2").val()
+
+
+                console.log(obj)
+
+
+
+
+                var $request = $.ajax({
+                    url: `http://35.78.201.111:3006/users/send-email-contact`,
+                    type: "POST",
+                    dataType: "json",
+                    contentType: "application/json",
+                    data: JSON.stringify(obj),
+                });
+
+                $request.done(function (data) {
+
+                    if (data.status) {
+                       
+                        toastr.options.positionClass = 'toast-bottom-right';
+                        toastr.success("Thanks, we connect you soon..!", '', { timeOut: 3000 })
+                        $('#contact_form')[0].reset();
+
+                    } else {
+                        toastr.options.positionClass = 'toast-bottom-right';
+                        toastr.error("Somethings went wrong...!", '', { timeOut: 3000 })
+
+                    }
+
+
+                })
+
+            }
+
+        });
+    </script>

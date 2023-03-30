@@ -1,0 +1,352 @@
+<%- include('header.ejs') %>
+    <style>
+        .mainParagraph {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 50px;
+            /* or 125% */
+
+
+            letter-spacing: -2px;
+
+            font-family: 'Poppins', sans-serif;
+            color: #2E2E2E;
+
+        }
+
+        .customParagraph {
+            color: #000000;
+            font-weight: 500 !important;
+
+        }
+
+        section.content {
+            padding: 40px 0px;
+            position: relative;
+        }
+
+        section.content::after {
+            position: absolute;
+            background: #EF817D;
+            height: 8px;
+            width: 55%;
+            margin: auto;
+            content: '';
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        /*-------images------ */
+        .images {
+            padding: 80px 0px;
+            position: relative;
+        }
+
+        .images::after {
+            position: absolute;
+            background: #EF817D;
+            height: 8px;
+            width: 55%;
+            margin: auto;
+            content: '';
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+        }
+
+        .mainH {
+            font-size: 32px;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+            color: #1E1E1E;
+            text-align: center;
+        }
+
+        .images .subHeading {
+            font-size: 24px;
+            font-weight: 800;
+            color: #000000;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .customDiv {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .imageM {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imageM img {
+            width: 100%;
+            padding: 40px;
+        }
+
+        @media screen and (max-width:767px) {
+            .customDiv {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            .customDiv .col-md-6 {
+                text-align: center;
+            }
+
+            .images {
+                padding: 40px 0px;
+            }
+
+            section.content {
+                padding: 40px 0px;
+            }
+
+            .mainH {
+                font-size: 24px;
+            }
+
+            .images .subHeading {
+                font-size: 18px;
+            }
+
+            .mainParagraph {
+                /* font-size: 14px; */
+            }
+        }
+
+        @media screen and (max-width:576px) {
+            .images {
+                padding: 20px 0px;
+            }
+
+            section.content {
+                padding: 20px 0px;
+            }
+        }
+
+
+        .customContainer {
+            /* height: 500px; */
+            width: 100%;
+            /* height: 405px; */
+            background-color: #dff1f7;
+            background-position: center;
+            padding-bottom: 80px;
+        }
+    </style>
+    <div class="container-fluid customContainer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <p class="mainParagraph customParagraph mt-5">
+                        Capture Your Audience's
+                        Attention with Powerful
+                        Digital Advertising
+                    </p>
+                    <p class="subHeading">
+                        As a business owner, you may have heard the term "digital advertising" being used more and more
+                        frequently. This is because digital advertising has become a vital component of modern marketing
+                        strategies, with more and more people using digital platforms to make purchasing decisions.
+
+                        <div class="form-row d-flex mt-5">
+                            <div class="form-group col-sm-8 ">
+                                <input type="hidden" id="type_value" value="Social Media Services">
+                                <input type="email" class="form-control contact_form" id="email3" autocomplete="off"
+                                    name="email" placeholder="Email" required>
+                            </div>
+                            <!-- button  -->
+                            <div class="form-group col-sm-4 offset-1">
+                                <button id="send_proposal"  class="btn btn-primary contact_form_button1">Send Proposal  </button>
+                            </div>
+                        </div>
+    
+
+
+                </div>
+                <div class="col-md-6">
+                    <!-- <img src="https://magicads360.com/web/img/seo.png" alt=""> -->
+                    <img src="img/social 1.png" alt="" width="585" height="390">
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="CustomServices">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="newCustomHeading" style="display:flex; justify-content:center;">
+
+                        <h3 class="mainH"> Social Media Services</h3>
+                    </div>
+
+                </div>
+            </div>
+
+            <section class="content">
+                <!-- <div class="mainOuter"> -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text_of_seo">
+                                Digital advertising encompasses a variety of channels, including social media, search
+                                engines, email, and display ads. Each channel has its unique benefits and target
+                                audience, making it important to choose the right mix of channels to maximize your
+                                advertising efforts.
+                            </p>
+                            <!-- <p class="mainParagraph text-center">
+                            Whether you're looking to improve your website's ranking on search engine results pages, increase your online presence, or drive more qualified traffic to your website, we have the expertise and tools to help you succeed. If you're not ranking, you're not banking. Let us help you take your business to the top of the search engine results and with our SEO services. 
+                        </p> -->
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </section>
+            <section class="images">
+                <div class="container">
+                    <div class="row">
+                        <div class="mainHeading col-md-12">
+                            <p class="mainH">
+                                Our Digital services include
+                            </p>
+                        </div>
+
+
+
+                        <div class="customDiv">
+                            <div class="col-md-6">
+                                <p class="subHeading">
+                                    Social Media Advertising
+                                </p>
+                                <p class="mainParagraph customParagraph">
+                                <p>Social media advertising involves creating and sharing content on social media
+                                    platforms to promote your products or services. With over 3.6 billion social media
+                                    users worldwide, social media advertising provides an excellent opportunity to reach
+                                    a vast audience.</p>
+                                </p>
+                                <b>Benefits of Social Media Advertising</b>
+                                <p>
+                                    <li>Provides the ability to target specific demographics, interests, and behaviors
+                                    </li>
+                                    <li>Cost-effective advertising options, including pay-per-click and sponsored posts
+                                    </li>
+                                    <li>Offers robust analytics to track and measure ad performance</li>
+
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="imageM">
+                                    <img src="img/Clip path group.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="customDiv">
+                            <div class="col-md-6">
+                                <div class="imageM">
+                                    <img src="img/OBJECTS1.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="subHeading">
+                                    Search Engine Advertising
+                                </p>
+                                <p class="mainParagraph customParagraph">
+                                <p>Search engine advertising involves placing ads on search engines like Google and
+                                    Bing. These ads are typically triggered by specific keywords and appear at the top
+                                    of the search results.</p>
+                                </p>
+                                <b>Benefits of Search Engine Advertising</b>
+                                <p>
+                                    <li>Offers high visibility to a targeted audience</li>
+                                    <li>Provides the ability to track and measure ad performance through analytics</li>
+                                    <li>Allows for precise targeting based on keywords, location, and other factors.
+                                    </li>
+
+                                </p>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="customDiv">
+                            <div class="col-md-6">
+                                <p class="subHeading">
+                                    Display Advertising
+                                </p>
+                                <p class="mainParagraph customParagraph">
+                                <p>Display advertising involves placing banner ads on websites and mobile apps. These
+                                    ads can be targeted to specific demographics, interests, and behaviors.</p>
+                                </p>
+                                <b>Benefits of Display Advertising</b>
+                                <p>
+                                    <li>Provides high visibility to a large audience</li>
+                                    <li>Allows for precise targeting based on demographics, interests, and behaviors
+                                    </li>
+                                    <li>Offers a variety of ad formats, including static banners, animated banners, and
+                                        video ads
+                                    </li>
+
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="imageM">
+                                    <img src="img/Illustration.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </section>
+            <section class="content" style="border:none;">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text_of_seo">By using a combination of these digital advertising channels, businesses can reach a broader audience and maximize their advertising efforts. It's important to remember that each channel requires a unique strategy and approach to achieve the best results with MagicAds 360 digital advertising services.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <div class="custom__socialIcons">
+                <ul class=" socialIcons ">
+                    <div class="custom__socialIcons">
+                        <ul class=" socialIcons ">
+                            <li><a href="https://www.linkedin.com/company/magicads360/"><i
+                                        class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="https://www.facebook.com/Magicads360"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://www.youtube.com/@magicads360"><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                            <li><a href="https://www.instagram.com/magic.ads.360/"><i
+                                        class="fa-brands fa-square-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <%- include('footer.ejs') %>

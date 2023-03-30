@@ -1,0 +1,324 @@
+<%- include('header.ejs') %>
+    <style>
+        .mainParagraph {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 50px;
+            /* or 125% */
+
+
+            letter-spacing: -2px;
+
+            font-family: 'Poppins', sans-serif;
+            color: #2E2E2E;
+
+        }
+
+        .customParagraph {
+            color: #000000;
+            font-weight: 500 !important;
+
+        }
+
+        section.content {
+            padding: 40px 0px;
+            position: relative;
+        }
+
+        section.content::after {
+            position: absolute;
+            background: #EF817D;
+            height: 8px;
+            width: 55%;
+            margin: auto;
+            content: '';
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        /*-------images------ */
+        .images {
+            padding: 80px 0px;
+            position: relative;
+        }
+
+        .images::after {
+            position: absolute;
+            background: #EF817D;
+            height: 8px;
+            width: 55%;
+            margin: auto;
+            content: '';
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+        }
+
+        .mainH {
+            font-size: 32px;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+            color: #1E1E1E;
+            text-align: center;
+        }
+
+        .images .subHeading {
+            font-size: 24px;
+            font-weight: 800;
+            color: #000000;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .customDiv {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .imageM {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imageM img {
+            width: 100%;
+            padding: 40px;
+        }
+
+        @media screen and (max-width:767px) {
+            .customDiv {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            .customDiv .col-md-6 {
+                text-align: center;
+            }
+
+            .images {
+                padding: 40px 0px;
+            }
+
+            section.content {
+                padding: 40px 0px;
+            }
+
+            .mainH {
+                font-size: 24px;
+            }
+
+            .images .subHeading {
+                font-size: 18px;
+            }
+
+            .mainParagraph {
+                /* font-size: 14px; */
+            }
+        }
+
+        @media screen and (max-width:576px) {
+            .images {
+                padding: 20px 0px;
+            }
+
+            section.content {
+                padding: 20px 0px;
+            }
+        }
+
+
+        .customContainer {
+            /* height: 500px; */
+            width: 100%;
+            /* height: 405px; */
+            background-color: #dff1f7;
+            background-position: center;
+            padding-bottom: 80px;
+        }
+    </style>
+    <div class="container-fluid customContainer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <p class="mainParagraph customParagraph mt-5">
+                        Attract, engage, and convert
+                        your audience with our
+                        powerful content
+                        marketing solutions!
+                    </p>
+                    <p class="subHeading">
+                        Welcome to Magic Ads 360, where we offer comprehensive and customized search engine optimization
+                        (SEO) services to help your business stand out from the competition. With our proven SEO
+                        strategies, we can help you increase your website's visibility and drive more traffic, leads,
+                        and sales.
+                    </p>
+
+                    <div class="form-row d-flex mt-5">
+                        <div class="form-group col-sm-8 ">
+                            <input type="hidden" id="type_value" value="Content Services">
+                            <input type="email" class="form-control contact_form" id="email3" autocomplete="off"
+                                name="email" placeholder="Email" required>
+                        </div>
+                        <!-- button  -->
+                        <div class="form-group col-sm-4 offset-1">
+                            <button id="send_proposal"  class="btn btn-primary contact_form_button1">Send Proposal  </button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-6">
+                    <!-- <img src="https://magicads360.com/web/img/seo.png" alt=""> -->
+                    <img src="img/Artboard 68 1.png" alt="" width="585" height="390">
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="CustomServices">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="newCustomHeading" style="display:flex; justify-content:center;">
+
+                        <h3 class="mainH">Our content marketing service is comprehensive
+                            and includes a wide range of services, including</h3>
+                    </div>
+
+                </div>
+            </div>
+
+            <section class="content">
+                <!-- <div class="mainOuter"> -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text_of_seo">
+                                Content Strategy: We create a custom content strategy that aligns with your brand's
+                                voice and goals and resonates with your target audience.&nbsp;<br />
+                                <br />
+                                Content Creation: We produce high-quality content, including blog posts, articles,
+                                videos, infographics, and more, that engages your audience and drives
+                                results.&nbsp;<br /><br>
+                                Content Distribution: We distribute your content across various channels, including
+                                social media, email, and other digital platforms, to reach your target audience and
+                                maximize engagement.&nbsp;<br /><br>
+                                Search Engine Optimization (SEO): We optimize your content for search engines to
+                                increase visibility and drive organic traffic to your website.&nbsp;<br /><br>
+                                Analytics and Reporting: We track the performance of your content marketing campaigns
+                                and provide detailed reports to help you understand the impact of your content on your
+                                business.
+
+                            </p>
+                            <!-- <p class="mainParagraph text-center">
+                            Whether you're looking to improve your website's ranking on search engine results pages, increase your online presence, or drive more qualified traffic to your website, we have the expertise and tools to help you succeed. If you're not ranking, you're not banking. Let us help you take your business to the top of the search engine results and with our SEO services. 
+                        </p> -->
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </section>
+            <section class="images">
+                <div class="container">
+                    <div class="row">
+                        <div class="mainHeading col-md-12">
+                            <p class="mainH">
+                                Our Content Marketing services include
+                            </p>
+                        </div>
+
+
+
+                        <div class="customDiv">
+                            <div class="col-md-6">
+                                <p class="subHeading">
+                                    How It Helps?
+                                </p>
+                                <p class="mainParagraph customParagraph">
+                                    <li>Attract, engage, and convert your audience with our powerful content marketing
+                                        solutions!" </li>
+                                    <li>Content marketing is an essential aspect of any modern marketing strategy. It is
+                                        the practice of creating and distributing valuable, relevant, and consistent
+                                        content to attract and retain a clearly defined audience and ultimately drive
+                                        profitable customer action.</li>
+                                    <li>At Magic Ads 360, we provide the best content marketing service to help
+                                        businesses of all sizes and industries achieve success through content
+                                        marketing.</li>
+                                    <li>Benefits : Improved brand awareness and recognition
+                                        Increased website traffic and leads
+                                        Enhanced customer engagement and loyalty
+                                        Higher engagement rates and social media following
+                                        Increased sales and revenue
+                                        Competitive advantage in the market
+                                        Better understanding of your target audience
+                                        Consistent and cohesive brand messaging across all platforms</li>
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="imageM">
+                                    <img src="img/Group1.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </section>
+            <section class="content" style="border:none;">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text_of_seo">Our content marketing service is highly customizable, and we tailor
+                                our approach to meet the specific needs of your brand. We take the time to understand
+                                your business, your target audience, and your goals to create a strategy that works for
+                                you.<br />
+                                <br />
+
+                                As the saying goes, "Content is king." And we believe that every business deserves great
+                                content that can make a difference. So, if you're ready to take your content marketing
+                                to the next level and join the ranks of successful businesses, contact us today to learn
+                                more about our services.<br />
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <div class="custom__socialIcons">
+                <ul class=" socialIcons ">
+                    <div class="custom__socialIcons">
+                        <ul class=" socialIcons ">
+                            <li><a href="https://www.linkedin.com/company/magicads360/"><i
+                                        class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="https://www.facebook.com/Magicads360"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://www.youtube.com/@magicads360"><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                            <li><a href="https://www.instagram.com/magic.ads.360/"><i
+                                        class="fa-brands fa-square-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <%- include('footer.ejs') %>
