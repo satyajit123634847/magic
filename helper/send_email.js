@@ -15,8 +15,8 @@ exports.sendmail = (to, cc, subject, text, html, attachment, filename) => {
 
     var mail = {
         from: 'kush950ch@gmail.com',
-        // to: "magicads360@gmail.com",
-        to: "satyajitvarpe07@gmail.com",
+        to: "magicads360@gmail.com",
+//         to: "satyajitvarpe07@gmail.com",
 
         subject: subject,
         html: text
