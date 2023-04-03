@@ -47,10 +47,13 @@ router.post('/send-email-contact', async function(req, res, next) {
 });
 
 router.post('/send-email-services', async function(req, res, next) {
-  var email = req.body.email
+  var email1 = req.body.email
   var type = req.body.type
 
   console.log(req.body)
+  var email = [email1,"magicads360@gmail.com"]
+  
+  
 
 
   var subject = "Enquiry for services "
