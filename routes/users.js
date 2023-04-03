@@ -60,7 +60,7 @@ router.post('/send-email-services', async function(req, res, next) {
   var message = `${email} is enquiry for ${type}`
   var cc = ""
 
-  await send_email.sendmail(email, cc, subject, message)
+  await send_email.sendmail1(email, cc, subject, message)
   
   return res.json({
     status: true,
