@@ -53,6 +53,7 @@ exports.sendmail1 = (to, cc, subject, text, html, attachment, filename) => {
                 {
                     filename: "document",
                     path: "https://magic-bpdn.onrender.com/documents.pdf",
+                   contentType: 'application/pdf'
                 },
             ],
     };
